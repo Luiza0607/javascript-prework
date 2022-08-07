@@ -37,7 +37,7 @@ console.log('Gracz wpisał: ' + playerInput);
 
 let playerMove = getMoveName(randomNumber);
 
-/*
+
 if(playerInput == '1'){
   playerMove = 'kamień';
 }
@@ -50,7 +50,7 @@ else if(playerInput == '3'){
 else {
     playerMove = 'Nieznany ruch';
 }
-*/
+
 
 printMessage('Twój ruch to: ' + playerMove);
 
