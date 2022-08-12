@@ -11,6 +11,18 @@ function getMoveName(randomNumber) {
     return 'nieznany ruch';
 }
 
+function displayResult(argCompuerMove, argPlayerMove){
+    if ((argCompuerMove == "kamień" && argPlayerMove == 'papier') ||
+    (argCompuerMove == 'nożyce' && argPlayerMove == 'kamień') ||
+    (argCompuerMove == 'papier' && argPlayerMove == 'nożyce')){
+    printMessage('Ty wygrywasz!');
+    } else if (argCompuerMove == argPlayerMove){
+        printMessage('Remis!');
+    } else if {
+    printMessage('Tym razem przegrywasz!');
+    }
+}    
+
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
@@ -70,3 +82,11 @@ if (playerMove == 'Nieznany ruch') {
 } else if (computerMove == 'nożyce' && playerMove == 'kamień') {
     printMessage('Wygrywasz!')
 }
+
+
+
+
+
+
+
+displayResult(computerMove, playerMove);
