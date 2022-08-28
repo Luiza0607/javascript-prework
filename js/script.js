@@ -1,5 +1,4 @@
 
-{
     const playGame = function (playerInput) {
     clearMessages();
     const randomNumber = Math.floor(Math.random() * 3 + 1);
@@ -43,7 +42,6 @@
     }    
 };
     displayResult(argcomputerMove, argplayerMove);
-};
    
 document.getElementById("play-rock").addEventListener("click", function() {
     playGame(1);
